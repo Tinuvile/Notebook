@@ -10,7 +10,7 @@
 
 为了改进搜索性能，我们可以使用二叉搜索，最基础的改进是引用中间节点，然后翻转节点指针遍历两边；同样，我们可以这样向每个递归半部分的中间添加指针以进一步优化，这样就形成了二叉树，每个节点都一分为二。
 
-<figure><img src="../.gitbook/assets/BSTbegin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BSTbegin.png" alt=""><figcaption></figcaption></figure>
 
 BTS 二叉搜索树：除了需要满足二叉树的定义，对树中的每个节点还需满足：
 
@@ -131,19 +131,19 @@ static BTS delete(BTS T, Key dk) {
 
 
 
-<figure><img src="../.gitbook/assets/BTree1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BTree1.png" alt=""><figcaption></figcaption></figure>
 
 因此我们添加一个修复，当叶节点达到一定数量的值时，我们考虑向上移动一个值。
 
 
 
-<figure><img src="../.gitbook/assets/BTree2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BTree2.png" alt=""><figcaption></figcaption></figure>
 
 同时，向上移动后仍需满足二叉搜索的条件，因此我们需要第二个修复，把子节点进行分隔。
 
 
 
-<figure><img src="../.gitbook/assets/BTree3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/BTree3.png" alt=""><figcaption></figcaption></figure>
 
 而如果根节点大于限制值，则我们被迫增加树的高度。
 
@@ -171,7 +171,7 @@ B-Tree 有两个不变量
 
 例如，将节点 G 向左旋转：
 
-<figure><img src="../.gitbook/assets/Rotating1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rotating1.png" alt=""><figcaption></figcaption></figure>
 
 代码的实现如下：
 
@@ -196,7 +196,7 @@ private Node rotateLeft(Node h) {
 
 旋转树的目的是对树的平衡性进行修复，不同的树的平衡性定义有所不同。
 
-<figure><img src="../.gitbook/assets/屏幕截图 2024-11-18 164616.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/屏幕截图 2024-11-18 164616.png" alt=""><figcaption></figcaption></figure>
 
 原文见[OI wiki](https://oi-wiki.org/ds/bst/)
 
@@ -206,11 +206,11 @@ private Node rotateLeft(Node h) {
 
 当 2-3 树中的内部节点只具有两个子节点时，我们不需要进行改动即同样是 BST 树。而当内部节点具有 3 个子节点时，我们可以创建一个虚拟的 Glue 节点，用于显示其两个子节点实际上是该节点的一部分。如图：
 
-<figure><img src="../.gitbook/assets/Glue.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Glue.png" alt=""><figcaption></figcaption></figure>
 
 但这样会占用更多空间，所以我们选择将虚拟的 Glue 节点转化为 Glue 链接，我们任意选择使左侧元素成为右侧元素的子元素，这样即会产生一个左倾的树。
 
-<figure><img src="../.gitbook/assets/LLRB.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/LLRB.png" alt=""><figcaption></figcaption></figure>
 
 图中红色的链接表示 Glue 链接，正常链接为黑色，这样的结构称为左倾红黑树(left-leaning red-black trees)。每棵左倾红黑树与 2-3 树都是一一对应的，而 2-3-4 树与标准红黑树保持对应关系。
 
@@ -234,17 +234,17 @@ LLRB 的插入总体与 BTS 一致，但为了保持结构，我们需要对一�
   * 左倾的红黑树永远不能有右红链接
   * 如果左侧子项也是红色链接，我们将暂时允许两个同时存在，以便在情况 3 中进行处理
 
-<figure><img src="../.gitbook/assets/LLRB1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/LLRB1.png" alt=""><figcaption></figcaption></figure>
 
 * 情况 2：左侧有两个红色链接
   * 操作：rotateRight(node)
   * 左侧有两个红色链接导致我们有一个非法的四节点
   * 我们旋转生成一个与情况 1 中双红节点一样的结构，然后在情况 3 中进行处理
 
-<figure><img src="../.gitbook/assets/LLRB2.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/LLRB2.avif" alt=""><figcaption></figcaption></figure>
 
 * 情况 3：节点有两个红色的子节点
   * 操作：颜色翻转
   * 反转所有与该节点接触的链接的颜色，相当于把 2-3 Tree 的中间节点往上推
 
-<figure><img src="../.gitbook/assets/LLRB3.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/LLRB3.avif" alt=""><figcaption></figcaption></figure>
