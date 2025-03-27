@@ -98,8 +98,7 @@ Java 允许我们定义两种类型的方法：
 
 #### public static void main(String\[ ] args)
 
-args 是一个用于接受命令行输入的字符串数组，它允许用户在运行程序时传递动态值，从而使 Java 应用能根据不\
-同输入执行不同操作。
+args 是一个用于接受命令行输入的字符串数组，它允许用户在运行程序时传递动态值，从而使 Java 应用能根据不同输入执行不同操作。
 
 ### Testing
 
@@ -202,16 +201,13 @@ public void print() {
 
 #### Extends
 
-如果我们想定义类之间的层次结构关系，例如我们想构建一个 RotatingSLList，它具有与 SLList 相同的功能\
-，但有一个额外的操作 rotateRight 将最后一项带到列表的前面。因此，我们希望可以继承 SLList 中的代码，\
-使用关键词 extends
+如果我们想定义类之间的层次结构关系，例如我们想构建一个 RotatingSLList，它具有与 SLList 相同的功能，但有一个额外的操作 rotateRight 将最后一项带到列表的前面。因此，我们希望可以继承 SLList 中的代码，使用关键词 extends
 
 ```java
 public class RotatingSLList<Item> extends SLList<Item>
 ```
 
-现在，extends 让我们保留了 SLList 的基础功能，并可以进行修改和添加其他功能。实际上，通过该关键词，子\
-类将继承父类的所有成员，包括：
+现在，extends 让我们保留了 SLList 的基础功能，并可以进行修改和添加其他功能。实际上，通过该关键词，子类将继承父类的所有成员，包括：
 
 * 所有实例和静态变量
 * 所有方法
@@ -601,7 +597,7 @@ Lucy is a happy Retriever weighing 80.0 standard lb units.
 
 
 
-<figure><img src="../../.gitbook/assets/checked_exceptions.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/checked_exceptions.png" alt=""><figcaption></figcaption></figure>
 
 而处理它们的方式有两种：
 
