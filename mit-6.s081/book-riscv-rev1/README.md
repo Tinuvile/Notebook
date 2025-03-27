@@ -1,5 +1,6 @@
 ---
 description: 课本阅读笔记
+coverY: 0
 ---
 
 # Book-riscv-rev1

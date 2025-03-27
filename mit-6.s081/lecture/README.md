@@ -1,5 +1,6 @@
 ---
 description: 课程笔记
+coverY: 0
 ---
 
 # Lecture

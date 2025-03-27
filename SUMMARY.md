@@ -12,3 +12,9 @@
 * [Lecture](mit-6.s081/lecture/README.md)
   * [Introduction and Examples](mit-6.s081/lecture/introduction-and-examples.md)
   * [Organization and System Calls](mit-6.s081/lecture/organization-and-system-calls.md)
+
+***
+
+* [Lab](lab/README.md)
+  * [Lab\_util\_Unix\_utilities](lab/lab_util_unix_utilities.md)
+  * [Lab\_system\_calls](lab/lab_system_calls.md)
