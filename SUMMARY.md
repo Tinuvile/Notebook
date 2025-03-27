@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Table of Contents](table-of-contents.md)
+* [Contents](contents.md)
 
 ## MIT 6.S081
 
@@ -18,3 +18,14 @@
 * [Lab](lab/README.md)
   * [Lab\_util\_Unix\_utilities](lab/lab_util_unix_utilities.md)
   * [Lab\_system\_calls](lab/lab_system_calls.md)
+
+## CS 61B
+
+* [Page 1](cs-61b/page-1/README.md)
+  * [Java相关简介](cs-61b/page-1/java-xiang-guan-jian-jie.md)
+  * [列表](cs-61b/page-1/lie-biao.md)
+  * [不相交集](cs-61b/page-1/bu-xiang-jiao-ji.md)
+  * [树](cs-61b/page-1/shu.md)
+  * [哈希](cs-61b/page-1/ha-xi.md)
+  * [堆和优先级队列](cs-61b/page-1/dui-he-you-xian-ji-dui-lie.md)
+  * [树遍历和图形](cs-61b/page-1/shu-bian-li-he-tu-xing.md)
