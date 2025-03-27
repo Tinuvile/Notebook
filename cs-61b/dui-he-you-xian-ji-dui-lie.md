@@ -32,7 +32,7 @@ public interface MinPQ<Item> {
 * Min-heap：每个节点都小于或等于其两个子节点；
 * Complete：仅在底层缺少（若有），所有节点尽可能靠左。
 
-<figure><img src="../../.gitbook/assets/BTS_PQ.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/BTS_PQ.avif" alt=""><figcaption></figcaption></figure>
 
 例如上图中绿色的堆是有效的，红色的则是无效的
 
@@ -52,7 +52,7 @@ public interface MinPQ<Item> {
 
       可视化如下：
 
-<figure><img src="../../.gitbook/assets/Tree1A.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tree1A.png" alt=""><figcaption></figcaption></figure>
 
 *   Tree1B 可变节点宽度
 
@@ -65,7 +65,7 @@ public interface MinPQ<Item> {
 
     可视化如下：
 
-<figure><img src="../../.gitbook/assets/Tree1B.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tree1B.png" alt=""><figcaption></figcaption></figure>
 
 *   Tree1C 同级树
 
@@ -79,7 +79,7 @@ public interface MinPQ<Item> {
 
     可视化如下：
 
-<figure><img src="../../.gitbook/assets/Tree1C.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tree1C.png" alt=""><figcaption></figcaption></figure>
 
 *   方法二
 
@@ -94,7 +94,7 @@ public interface MinPQ<Item> {
 
     keys 数组表示索引映射到的键值，parents 数组表示该节点的父节点
 
-<figure><img src="../../.gitbook/assets/Tree2.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Tree2.avif" alt=""><figcaption></figcaption></figure>
 
 这样看 parents 数组似乎是冗余的，keys 中的顺序跟树的级别顺序安全相同。
 

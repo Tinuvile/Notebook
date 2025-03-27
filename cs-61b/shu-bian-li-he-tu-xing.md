@@ -10,7 +10,7 @@
 \
 我们给出该树的基本结构：
 
-<figure><img src="../../.gitbook/assets/tree.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/tree.png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public class BST<Key> {

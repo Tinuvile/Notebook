@@ -29,11 +29,11 @@
 
 ## CS 61B
 
-* [Java相关简介](cs-61b/java-xiang-guan-jian-jie.md)
+* [Java](cs-61b/java.md)
 * [Data Structure](cs-61b/data-structure/README.md)
-  * [列表](cs-61b/data-structure/lie-biao.md)
-  * [不相交集](cs-61b/data-structure/bu-xiang-jiao-ji.md)
-  * [树](cs-61b/data-structure/shu.md)
-  * [哈希](cs-61b/data-structure/ha-xi.md)
-  * [堆和优先级队列](cs-61b/data-structure/dui-he-you-xian-ji-dui-lie.md)
-  * [树遍历和图形](cs-61b/data-structure/shu-bian-li-he-tu-xing.md)
+  * [列表](cs-61b/lie-biao.md)
+  * [不相交集](cs-61b/bu-xiang-jiao-ji.md)
+  * [树](cs-61b/shu.md)
+  * [哈希](cs-61b/ha-xi.md)
+  * [堆和优先级队列](cs-61b/dui-he-you-xian-ji-dui-lie.md)
+  * [树遍历和图形](cs-61b/shu-bian-li-he-tu-xing.md)

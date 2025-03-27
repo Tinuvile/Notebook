@@ -37,7 +37,7 @@ public interface DisjointSets {
 \
 对于这种方法下实现的 isConnected(x,y)，我们只需要检查是否有
 
-<figure><img src="../../.gitbook/assets/屏幕截图 2024-11-13 083549.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/屏幕截图 2024-11-13 083549.png" alt=""><figcaption></figcaption></figure>
 
 ```java
 id[x] == id[y]
@@ -83,7 +83,7 @@ public class QuickFindDS implements DisjointSets {
 \
 具体实现如下：
 
-<figure><img src="../../.gitbook/assets/屏幕截图 2024-11-13 084444.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/屏幕截图 2024-11-13 084444.png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public class QuickUnionDS implements DisjointSets {

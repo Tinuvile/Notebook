@@ -62,7 +62,7 @@ int x = L.first;
 
 
 
-<figure><img src="../../.gitbook/assets/屏幕截图 2024-11-12 224341.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/屏幕截图 2024-11-12 224341.png" alt=""><figcaption></figcaption></figure>
 
 ### SLList
 
@@ -113,7 +113,7 @@ int x = L.getFirst();
 
 直观的表示为：
 
-<figure><img src="../../.gitbook/assets/屏幕截图 2024-11-12 224751.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/屏幕截图 2024-11-12 224751.png" alt=""><figcaption></figcaption></figure>
 
 * 进一步，我们可以采用嵌套类整合代码。如果嵌套类不需要使用外层类的任何实例方法和变量，可以将其声明为 static，这意味着静态类中的方法不能访问封闭类的任何成员，在下面代码即表现为 IntNode 中的任何方法都无法访问 first、addFirst 或者 getFirst，这样设置关键词可以节省少量内存。\
 
