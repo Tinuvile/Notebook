@@ -5,7 +5,7 @@ coverY: 0
 
 # Contents
 
-### CS 61B
+### CS 61B（数据结构）
 
 Starting in September 2024.
 
@@ -20,3 +20,15 @@ Starting in February 2025.
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
+
+### CS 186（数据库）
+
+Starting in February 2025.
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+### CS 61A（python）
+
+Starting in February 2025.
