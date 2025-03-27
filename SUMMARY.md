@@ -21,11 +21,10 @@
 
 ## CS 61B
 
-* [Page 1](cs-61b/page-1/README.md)
-  * [Java相关简介](cs-61b/page-1/java-xiang-guan-jian-jie.md)
-  * [列表](cs-61b/page-1/lie-biao.md)
-  * [不相交集](cs-61b/page-1/bu-xiang-jiao-ji.md)
-  * [树](cs-61b/page-1/shu.md)
-  * [哈希](cs-61b/page-1/ha-xi.md)
-  * [堆和优先级队列](cs-61b/page-1/dui-he-you-xian-ji-dui-lie.md)
-  * [树遍历和图形](cs-61b/page-1/shu-bian-li-he-tu-xing.md)
+* [Java相关简介](cs-61b/java-xiang-guan-jian-jie.md)
+* [列表](cs-61b/lie-biao.md)
+* [不相交集](cs-61b/bu-xiang-jiao-ji.md)
+* [树](cs-61b/shu.md)
+* [哈希](cs-61b/ha-xi.md)
+* [堆和优先级队列](cs-61b/dui-he-you-xian-ji-dui-lie.md)
+* [树遍历和图形](cs-61b/shu-bian-li-he-tu-xing.md)
