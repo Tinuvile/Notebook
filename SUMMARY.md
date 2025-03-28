@@ -12,6 +12,7 @@
 * [Lecture](mit-6.s081/lecture/README.md)
   * [Introduction and Examples](mit-6.s081/lecture/introduction-and-examples.md)
   * [Organization and System Calls](mit-6.s081/lecture/organization-and-system-calls.md)
+  * [Page tables](mit-6.s081/lecture/page-tables.md)
 
 ***
 

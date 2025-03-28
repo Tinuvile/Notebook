@@ -53,7 +53,7 @@
 
 
 
-<figure><img src="../../.gitbook/assets/2025-03-25-08-30-40-image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2025-03-25-08-30-40-image (1).png" alt=""><figcaption></figcaption></figure>
 
 在**QEMU**模拟的计算机中，包含从物理地址`0x80000000`至少到`0x86400000`的RAM，`xv6`称为**PHYSTOP**；模拟还包括磁盘接口等I/O设备，QEMU将设备接口暴露给软件，当作物理地址空间`0x80000000`以下的内存映射设备的寄存器，内核可以通过读写这些特殊的物理地址与设备交互，这些操作是与设备硬件通信。
 
