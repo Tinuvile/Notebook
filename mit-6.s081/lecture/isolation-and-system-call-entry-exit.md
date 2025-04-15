@@ -190,7 +190,7 @@ $2 = 0x0
 
 我们可以在QEMU中打印当前的`page table`，在QEMU界面输入`ctrl a + c`进入QEMU的`console`，然后输入`info mem`可以打印完整的`page table`。
 
-> 这里打印的是`kernel page table`，但老师这里在用户空间🤔，不知道是不是调试模式的原因，或者是是后面`xv6`修改过，考虑到`csrrw`那个地方也不一样。
+> 这里打印的是超长的`kernel page table`，但老师这里在用户空间🤔，不知道是不是Lab的代码的原因，考虑到`csrrw`那个地方也不一样。
 
 ```bash
 xv6 kernel is booting
