@@ -10,17 +10,13 @@
 
 `xv6`采用传统的内核形式，将`kernel`视为一个为运行中的程序提供服务的特殊程序。每个运行中的程序称为进程，进程有包含指令、数据与栈的内存。指令实现程序的计算、数据是计算所作用的变量、栈负责组织程序的过程调用。
 
-
-
 <figure><img src="../../.gitbook/assets/2025-03-09-11-31-57-image.png" alt=""><figcaption></figcaption></figure>
 
 当进程需要调用内核服务，会调用`System call`，进入内核，内核执行服务并返回。因此，进程在用户空间和内核空间之间交替进行。至于权限由硬件部分负责升级或降级。至于`shell`也只是一个普通的用户程序。
 
-这幅图展示了`xv6`所有的系统调用。
-
-
-
 <figure><img src="../../.gitbook/assets/2025-03-09-12-45-03-image.png" alt=""><figcaption></figcaption></figure>
+
+这幅图展示了`xv6`所有的系统调用。
 
 ***
 
@@ -127,7 +123,7 @@ case REDIR:
     break;
 ```
 
-> `open`的第二个参数由一组标志组成，用于控制`open`的行为，在\[`fcntl`头文件]\(xv6-riscv/kernel/fcntl.h at riscv · mit-pdos/xv6-riscv]\(https://github.com/mit-pdos/xv6-riscv/blob/riscv//kernel/fcntl.h#L1-L5))中定义。O\_RDONLY,O\_WRONLY,O\_RDWR,O\_CREATE和O\_TRUNC，指示`open`函数如何打开文件，用于读取、写入或是同时进行读取和写入，如果文件不存在则创建文件，将文件截断为零长度。
+> `open`的第二个参数由一组标志组成，用于控制`open`的行为，在[`fcntl`头文件](https://github.com/mit-pdos/xv6-riscv/blob/riscv/kernel/fcntl.h#L1-L5)中定义。O\_RDONLY,O\_WRONLY,O\_RDWR,O\_CREATE和O\_TRUNC，指示`open`函数如何打开文件，用于读取、写入或是同时进行读取和写入，如果文件不存在则创建文件，将文件截断为零长度。
 
 这里我们可以知道为什么要把`fork`与`exec`分开调用，这样，`shell`可以在不干扰主`shell`的情况下重定向子进程的I/O。
 
