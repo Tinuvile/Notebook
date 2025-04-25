@@ -27,6 +27,8 @@
   * [Lab\_page\_tables](lab/lab_page_tables.md)
 * [Code](code/README.md)
   * [page table源码阅读](code/page-table-yuan-ma-yue-du.md)
+  * [FileDescriptors源码阅读](code/filedescriptors-yuan-ma-yue-du.md)
+  * [exec源码阅读](code/exec-yuan-ma-yue-du.md)
 
 ## CS 186
 
