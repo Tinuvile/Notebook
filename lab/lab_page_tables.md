@@ -227,7 +227,7 @@ found:
 然后释放`USYSCALL`页：
 
 ```c
-/ free a proc structure and the data hanging from it,
+// free a proc structure and the data hanging from it,
 // including user pages.
 // p->lock must be held.
 static void
