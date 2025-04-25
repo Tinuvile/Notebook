@@ -20,11 +20,9 @@ layout:
 
 # Welcome
 
-Welcome to my notes!&#x20;
+我目前是软件工程大二的学生，这里会放置我学习的一些笔记。
 
-I am a sophomore majoring in software engineering. This space is primarily used to store my course notes, and there may also be some personal reflections or other content.&#x20;
 
-Feel free to reach out to me!
 
 ### Jump right in
 
