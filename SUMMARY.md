@@ -25,6 +25,7 @@
   * [Lab\_util\_Unix\_utilities](lab/lab_util_unix_utilities.md)
   * [Lab\_system\_calls](lab/lab_system_calls.md)
   * [Lab\_page\_tables](lab/lab_page_tables.md)
+  * [Lab\_traps](lab/lab_traps.md)
 * [Code](code/README.md)
   * [page table源码阅读](code/page-table-yuan-ma-yue-du.md)
   * [FileDescriptors源码阅读](code/filedescriptors-yuan-ma-yue-du.md)
