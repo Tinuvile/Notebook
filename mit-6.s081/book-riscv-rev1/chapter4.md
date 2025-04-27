@@ -1,5 +1,7 @@
 # Chapter4
 
+## Traps and system calls
+
 ## 陷阱与系统调用
 
 ***
@@ -18,9 +20,9 @@
 
 ***
 
-## RISC-V trap machinery
+### RISC-V trap machinery
 
-## RISC-V陷阱机制
+### RISC-V陷阱机制
 
 每个RISC-V寄存器都有一组控制寄存器，内核通过写入这些寄存器来告诉CPU如何处理陷阱，且内核可以通过阅读寄存器来得知已经发生的`trap`。其中几个最重要的寄存器是：
 
@@ -47,9 +49,9 @@
 
 ***
 
-## Traps from user space
+### Traps from user space
 
-## 来自用户空间的陷阱
+### 来自用户空间的陷阱
 
 当用户程序进行系统调用（`ecall`指令）、执行非法操作或设备中断时都可能发生`trap`，处理用户空间陷阱的代码流程如下：
 
@@ -370,9 +372,9 @@
 
 ***
 
-## Code：Calling system calls
+### Code：Calling system calls
 
-## 代码：调用系统调用
+### 代码：调用系统调用
 
 这部分介绍用户调用如何到达内核中`exec`系统调用。
 
@@ -412,9 +414,9 @@ syscall(void)
 
 ***
 
-## Code：System call arguments
+### Code：System call arguments
 
-## 代码：系统调用参数
+### 代码：系统调用参数
 
 内核中的系统调用实现需要找到用户代码传递的参数。参数最初位于寄存器中，内核陷阱代码将所有用户寄存器保存到了当前进程的陷阱帧（`trapframe`）中。`argint`、`argaddr`和`argfd`函数分别从陷阱帧中检索第`n`个系统调用参数，分别作为整数、指针和文件描述符。它们都调用`argraw`来检索适当的已保存的用户寄存器。
 
@@ -484,9 +486,9 @@ copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
 
 ***
 
-## Traps from kernel space
+### Traps from kernel space
 
-## 内核空间的陷阱
+### 内核空间的陷阱
 
 `xv6`根据用户代码和内核代码的执行情况，对CPU的陷阱寄存器进行了不同的配置。当内核在CPU上执行时，内核将`stvec`指向`kernelvec`处的汇编代码。由于`xv6`已经处于内核态，`kernelvec`可以通过`satp`被设置为内核页表，并且栈指针指向一个有效的内核栈。`kernelvec`会保存所有寄存器，以便被中断的代码后面能不受干扰的恢复执行。
 
@@ -531,9 +533,9 @@ kerneltrap()
 
 ***
 
-## Page-fault exceptions
+### Page-fault exceptions
 
-## 缺页异常
+### 缺页异常
 
 `xv6`对异常的处理很简单：
 

@@ -1,4 +1,6 @@
-# Interrupts and device drivers
+# Chapter5
+
+## Interrupts and device drivers
 
 驱动程序`driver`是操作系统中管理特定设备的代码。它配置设备硬件，指示设备执行操作，处理产生的中断，并与可能正在等待设备I/O的进程交互。
 
@@ -8,13 +10,13 @@
 
 ***
 
-## Code：Console input
+### Code：Console input
 
-## 代码：控制台输入
+### 代码：控制台输入
 
 控制台驱动程序`console.c`是驱动程序结构的一个示例。它通过连接到 RISC-V 的 UART 串口硬件接受输入的字符。控制台驱动程序一次累积一行输入，用`consoleintr`处理特殊输入字符。用户进程使用`read`系统调用从控制台获取输入行，驱动程序通过 **QEMU** 模拟的 16550芯片与 UART 硬件通信。
 
-### UART
+#### UART
 
 UART 硬件对软件来说表现为一组内存映射的控制寄存器。RISC-V 将一些物理地址映射到 UART 设备，因此 load 和 store 会直接与设备硬件交互，而非 RAM 。
 
@@ -86,7 +88,7 @@ uartinit(void)
 }
 ```
 
-### 控制台输入
+#### 控制台输入
 
 `xv6 shell`通过文件描述符从控制台读取数据，`read`系统调用通过内核会到达`consoleread`。它等待输入通过中断到达并从缓冲区`cons.buf`读取字符，将输入复制到用户空间，并在整行到达后返回用户进程。
 
@@ -170,9 +172,9 @@ uartintr(void)
 
 ***
 
-## Code：Console output
+### Code：Console output
 
-## 代码：控制台输出
+### 代码：控制台输出
 
 对连接到控制台的文件描述符进行`write`系统调用最终会到达`uartputc`。
 
@@ -249,9 +251,9 @@ uartstart()
 
 ***
 
-## Concurrency in drivers
+### Concurrency in drivers
 
-## 驱动程序中的并发性
+### 驱动程序中的并发性
 
 `concoleread`和`consoleintr`中都有`acquire`语句，这些调用获取了一个锁，用于保护控制台驱动程序的数据结构免受并发访问。这里有三种并发危险：不同 CPU 上的两个进\
 程可能同时调用`consoleread`；硬件可能在一个 CPU 已经在执行`consoleread`时要求该 CPU 传递一个控制台（实际上是 UART）中断；以及硬件可能在`consoleread`执行时在另一个 CPU 上传递控制台中断。
@@ -260,9 +262,9 @@ uartstart()
 
 ***
 
-## Timer interrupts
+### Timer interrupts
 
-## 定时器中断
+### 定时器中断
 
 `xv6`使用定时器中断来维护其时钟，并使其能在计算密集型进程间切换。切换在`usertrap`和`kerneltrap`中用`yield`实现。`xv6`对连接到RISC-V CPU 的时钟硬件编程，使其定期中断每个 CPU。
 
@@ -316,7 +318,7 @@ void clockintr() {
 
 ***
 
-## Real world
+### Real world
 
 `xv6`允许在执行内核代码和用户程序时发送设备和定时器中断。定时器中断强制从处理程序中进行线程切换。
 

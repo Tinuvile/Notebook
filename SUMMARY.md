@@ -11,6 +11,7 @@
   * [Chapter3](mit-6.s081/book-riscv-rev1/chapter3.md)
   * [Chapter18](mit-6.s081/book-riscv-rev1/chapter18.md)
   * [Chapter4](mit-6.s081/book-riscv-rev1/chapter4.md)
+  * [Chapter5](mit-6.s081/book-riscv-rev1/chapter5.md)
 * [Lecture](mit-6.s081/lecture/README.md)
   * [Introduction and Examples](mit-6.s081/lecture/introduction-and-examples.md)
   * [Organization and System Calls](mit-6.s081/lecture/organization-and-system-calls.md)
@@ -18,7 +19,6 @@
   * [Calling conventions and stack frames RISC-V](mit-6.s081/lecture/calling-conventions-and-stack-frames-risc-v.md)
   * [Isolation and system call entry/exit](mit-6.s081/lecture/isolation-and-system-call-entry-exit.md)
   * [Page faults](mit-6.s081/lecture/page-faults.md)
-  * [Interrupts and device drivers](mit-6.s081/lecture/interrupts-and-device-drivers.md)
 
 ***
 
