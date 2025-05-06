@@ -20,6 +20,7 @@
   * [Isolation and system call entry/exit](mit-6.s081/lecture/isolation-and-system-call-entry-exit.md)
   * [Page faults](mit-6.s081/lecture/page-faults.md)
   * [Interrupts](mit-6.s081/lecture/interrupts.md)
+  * [Locking](mit-6.s081/lecture/locking.md)
 
 ***
 
