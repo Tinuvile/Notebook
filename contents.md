@@ -32,3 +32,11 @@ Starting in February 2025.
 ### CS 61A（python）
 
 Starting in February 2025.
+
+### CS 144 （计算机网络）
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+Starting in May 2025.

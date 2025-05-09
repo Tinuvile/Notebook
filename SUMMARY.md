@@ -44,6 +44,11 @@
   * [Project 1: SQL](cs-186/project/project-1-sql.md)
   * [Project 2: B+ Trees](cs-186/project/project-2-b+-trees.md)
 
+## CS 144
+
+* [Lab](cs-144/lab/README.md)
+  * [Checkpoint0: networking warmup](cs-144/lab/checkpoint0-networking-warmup.md)
+
 ## CS 61B
 
 * [Java](cs-61b/java.md)
