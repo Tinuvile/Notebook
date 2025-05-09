@@ -178,7 +178,7 @@ krefer(void *pa)
 
 在`usertrap`中加入写入页错误的情况的特殊处理。
 
-<figure><img src="../.gitbook/assets/2025-04-30-19-05-56-image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2025-04-30-19-05-56-image.png" alt=""><figcaption></figcaption></figure>
 
 如果错误与预期不符就直接杀掉进程。
 

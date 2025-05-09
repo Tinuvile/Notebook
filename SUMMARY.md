@@ -21,20 +21,17 @@
   * [Page faults](mit-6.s081/lecture/page-faults.md)
   * [Interrupts](mit-6.s081/lecture/interrupts.md)
   * [Locking](mit-6.s081/lecture/locking.md)
-
-***
-
-* [Lab](lab/README.md)
-  * [Lab\_util\_Unix\_utilities](lab/lab_util_unix_utilities.md)
-  * [Lab\_system\_calls](lab/lab_system_calls.md)
-  * [Lab\_page\_tables](lab/lab_page_tables.md)
-  * [Lab\_traps](lab/lab_traps.md)
-  * [Lab\_Copy\_on\_write\_fork\_for\_xv6](lab/lab_copy_on_write_fork_for_xv6.md)
-* [Code](code/README.md)
-  * [page table源码阅读](code/page-table-yuan-ma-yue-du.md)
-  * [FileDescriptors源码阅读](code/filedescriptors-yuan-ma-yue-du.md)
-  * [exec源码阅读](code/exec-yuan-ma-yue-du.md)
-  * [traps源码阅读](code/traps-yuan-ma-yue-du.md)
+* [Lab](mit-6.s081/lab/README.md)
+  * [Lab\_util\_Unix\_utilities](mit-6.s081/lab/lab_util_unix_utilities.md)
+  * [Lab\_system\_calls](mit-6.s081/lab/lab_system_calls.md)
+  * [Lab\_page\_tables](mit-6.s081/lab/lab_page_tables.md)
+  * [Lab\_traps](mit-6.s081/lab/lab_traps.md)
+  * [Lab\_Copy\_on\_write\_fork\_for\_xv6](mit-6.s081/lab/lab_copy_on_write_fork_for_xv6.md)
+* [Code](mit-6.s081/code/README.md)
+  * [page table源码阅读](mit-6.s081/code/page-table-yuan-ma-yue-du.md)
+  * [FileDescriptors源码阅读](mit-6.s081/code/filedescriptors-yuan-ma-yue-du.md)
+  * [exec源码阅读](mit-6.s081/code/exec-yuan-ma-yue-du.md)
+  * [traps源码阅读](mit-6.s081/code/traps-yuan-ma-yue-du.md)
 
 ## CS 186
 
